@@ -1,32 +1,202 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>My Website</title>
-        <link rel="style" href="newcss.css">
-</head>
-<body>
-	<header>
-		<h1>Welcome to my Test Website</h1>
-		<nav>
-                    <button onclick="myFunction()">Click me</button>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<h2>My Content</h2>
-                <button onclick="document.getElementById('My Image').style.display = 'none'">Hide image</button>
-                <button onclick="document.getElementById('My Image').style.display = 'block'">Show image</button>
-                <img id="My Image" src="Gordan.jpg" alt="My Image" title="The Master Chef">
-		<p>This website exists to test my abilities at making a website. You can put anything into this paragraph to define anything. The limits is only your idea not the space in this paragraph. Also side note coding for a website is surprisingly easier then java. OMG java is such a pain in my ass. Its the worse.</p>
-	</main>
-	
-	<footer>
-		<p>&copy; 2023 Tim</p>
-	</footer>
-</body>
+    <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="newcss.css" type="text/css"/>
+  <link rel="stylesheet" href="newcss.css" type="text/css">
+ 
+ 
+<title class="title">My Website</title> 
+  
+</head> 
+
+<header class="header">
+      
+  <div class="container">
+  
+    <nav class="nav">
+   
+      <ul class="nav-list">
+ 
+        <li class="nav-item">
+          
+          <a href="#" class="nav-link">
+            
+            <img src="fff.jpg" alt="Food Logo">
+          </a>
+        </li>
+        <li class="nav-item">
+          
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          
+          <a href="#" class="nav-link">Reservations</a>
+        </li>
+        <li class="nav-item">
+    
+          <a href="#" class="nav-link">Contact us</a>
+        </li>
+        <li class="nav-item">
+          
+          <a href="#" class="nav-link">Online Order</a>
+        </li>
+        <li class="nav-item">
+          
+        </li>
+        <li class="nav-item">
+          
+          <a href="#" class="nav-link">
+            
+            <img src="search-icon.png" alt="Search icon">
+          </a>
+        </li>
+        <li class="nav-item">
+
+          <a href="#" class="nav-link">
+            
+            <img src="bag-icon.png" alt="Bag icon">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    <style>
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.header {
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  animation: slideDown 1s ease-out;
+}
+
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+.nav-link:hover {
+  color: Blue;
+}
+</style>
+
+</header>
+
+<main class="main">
+
+  <section class="hero">
+    
+    <img src="p.jpg" alt="Plantain">
+  </section>
+ 
+  <section class="products">
+    
+    <div class="container">
+      
+      <article class="product">
+        
+        <img src="r.jpg" alt="Rice">
+      </article>
+      <article class="product">
+        
+        <img src="m.jpg" alt="Meat">
+      </article>
+      <article class="product">
+       
+        <img src="c.jpg" alt="Chef">
+      </article>
+    </div>
+  </section>
+</main>
+    
+<footer class="footer">
+  
+  <div class="container">
+    
+    <div class="footer-top">
+     
+      <p class="footer-text">By Tim</p>
+      
+      <ul class="footer-links">
+        
+        <li class="footer-link">
+          
+          <a href="#" class="footer-link">Site Map</a>
+        </li>
+        <li class="footer-link">
+          
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+        <li class="footer-link">
+          
+          <a href="#" class="footer-link">Terms of Use</a>
+        </li>
+        <li class="footer-link">
+          
+          <a href="#" class="footer-link">Sales and Refunds</a>
+        </li>
+        <li class="footer-link">
+          
+          <a href="#" class="footer-link">Legal</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    
+      <p class="country">United States</p>
+    </div>
+  </div>
+  <style>
+ 
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  animation: slideUp 1s ease-out;
+}
+
+
+.country {
+  font-size: 14px;
+  transition: font-size 0.3s;
+}
+
+
+.country:hover {
+  font-size: 16px; 
+}
+.footer-text:hover {
+  font-size: 16px; 
+}
+
+
+</style>
+</footer>
 </html>
