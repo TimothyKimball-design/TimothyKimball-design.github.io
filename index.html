@@ -3,7 +3,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="newcss.css" type="text/css"/>
   <link rel="stylesheet" href="newcss.css" type="text/css">
- 
+ <style>
+.fadein {
+    position:relative;
+    height:800px;
+    width:1140px;
+}
+.fadein img {
+    position:absolute;
+    left:0;
+    top:0;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      3000);
+});
+</script>
  
 <title class="title">My Website</title> 
   
@@ -42,7 +64,7 @@
         </li>
         <li class="nav-item">
           
-          <a href="#" class="nav-link">Order</a>
+          <a href="#" class="nav-link">Online Order</a>
         </li>
         <li class="nav-item">
           
@@ -100,30 +122,18 @@
 </header>
 
 <main class="main">
-
-  <section class="hero">
     
-    <img src="P.jpg" alt="Plantain">
+<section class="hero">
+<div class="fadein">
+<img src="p.jpg">
+<img src="r.jpg">
+<img src="m.jpg">
+<img src="c.jpg">
+</div>
+ 
   </section>
  
-  <section class="products">
-    
-    <div class="container">
-      
-      <article class="product">
-        
-        <img src="R.jpg" alt="Rice">
-      </article>
-      <article class="product">
-        
-        <img src="M.jpg" alt="Meat">
-      </article>
-      <article class="product">
-       
-        <img src="C.jpg" alt="Chef">
-      </article>
-    </div>
-  </section>
+  
 </main>
     
 <footer class="footer">

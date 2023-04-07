@@ -44,7 +44,7 @@
 
 /* Define a style for each image element inside a nav-link element */
 .nav-link img {
-  width: 20px;
+  width: 22px;
 }
 
 .main {
@@ -121,12 +121,13 @@
 .footer-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* Define a style for the footer-text element */
 .footer-text {
   font-size: 12px;
+  
 }
 
 /* Define a style for the footer-links element */
@@ -154,4 +155,9 @@
 /* Define a style for the country element */
 .country {
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
