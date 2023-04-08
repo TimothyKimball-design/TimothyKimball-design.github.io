@@ -159,3 +159,25 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Default styles */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Styles for small screens */
+@media (max-width: 600px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+/* Styles for large screens */
+@media (min-width: 1200px) {
+  body {
+    background-color: blue;
+    color: yellow;
+  }
+}
