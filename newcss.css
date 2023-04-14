@@ -14,12 +14,11 @@
 @media only screen and (max-width: 768px) {
   /* Adjust styles for mobile devices */
   .header {
-    font-size: 18px;
-    width: 50%;
-    padding: 10px;
+    width: 120%;
+    height: 22px;
     background-color: white;
   }
-}
+
 /* Define a style for the container element */
 .container {
   max-width: 1440px;
