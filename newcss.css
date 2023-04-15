@@ -1,191 +1,103 @@
-.title {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-}
 
-
-/* Define a style for the header element */
-.header {
-  width: 100%;
-  height: 44px;
-  background-color: black;
-}
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  /* Adjust styles for mobile devices */
-  .header {
-    width: 120%;
-    height: 22px;
-    background-color: white;
-  }
-
-/* Define a style for the container element */
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-/* Define a style for the nav element */
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Define a style for the nav-list element */
-.nav-list {
-  display: flex;
-  list-style-type: none;
-}
-
-/* Define a style for each nav-item element */
-.nav-item {
-  margin: 0 10px;
-}
-
-/* Define a style for each nav-link element */
-.nav-link {
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-
-/* Define a style for each image element inside a nav-link element */
-.nav-link img {
-  width: 22px;
-}
-
-.main {
-  width: 100%;
-}
-
-/* Define a style for the hero element */
-.hero {
-  width: 100%;
-  height: 800px;
-}
-
-/* Define a style for the hero image */
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Define a style for the products element */
-.products {
-  width: 100%;
-}
-
-/* Define a style for the container element */
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-/* Define a style for each product element */
-.product {
-  width: 100%;
-}
-
-/* Define a style for each product image */
-.product img {
-  width: 100%;
-}
-/* Define a style for the footer element */
-.footer {
-  width: 100%;
-  background-color: black;
-}
-
-/* Define a style for each paragraph element inside the footer element */
-.footer p {
-  color: white;
-}
-
-/* Define a style for each anchor element inside the footer element */
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Define a style for each list item element inside the footer element */
-.footer li {
-  display: inline-block;
-}
-
-/* Define a style for each image element inside the footer element */
-.footer img {
-  width: 20px;
-}
-
-/* Define a style for the container element */
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-/* Define a style for the footer-top element */
-.footer-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Define a style for the footer-text element */
-.footer-text {
-  font-size: 12px;
-  
-}
-
-/* Define a style for the footer-links element */
-.footer-links {
-  list-style-type: none;
-}
-
-/* Define a style for each footer-link element */
-.footer-link {
-  margin: 0 10px;
-}
-
-/* Define a style for each footer-link element on hover */
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-/* Define a style for the footer-bottom element */
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Define a style for the country element */
-.country {
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Default styles */
-body {
-  background-color: white;
-  color: black;
-}
-
-/* Styles for small screens */
-@media (max-width: 600px) {
-  body {
-    background-color: black;
-    color: white;
-  }
-}
-
-/* Styles for large screens */
-@media (min-width: 1200px) {
-  body {
-    background-color: blue;
-    color: yellow;
-  }
-}
+		body {
+			background-color: #D4E6F1;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.header {
+			background-color: #f7f7f7;
+			color: #000;
+			text-align: center;
+                        height: 180px;
+		}
+		
+		.navbar {
+			background-color: #A8D8EA;
+			overflow: hidden;
+		}
+		
+		.navbar a {
+			float: left;
+			display: block;
+			color: #000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		
+		.navbar a:hover {
+			background-color: #BBD2E1;
+		}
+		
+		.hero-image {
+			background-image: url('L3.jpg');
+			height: 400px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.hero-text {
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: black;
+			font-size: 50px;
+		}
+		
+		.menu-section {
+			background-color: #F2D7B6;
+			padding: 50px;
+			margin-bottom: 20px;
+		}
+		
+		.menu-item {
+			margin-bottom: 20px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			border: 1px solid #000;
+			border-radius: 5px;
+		}
+		
+		.menu-item img {
+			max-width: 100px;
+			margin-right: 20px;
+		}
+		
+		.menu-item h3 {
+			margin: 0;
+			font-size: 24px;
+		}
+		
+		.menu-item p {
+			margin: 0;
+			font-size: 18px;
+		}
+		
+		.footer {
+			background-color: #8ECC80;
+			padding: 20px;
+			text-align: center;
+			color: #fff;
+		}
+                
+                .slide {
+                    height: 300px;
+			position: relative;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 50px;
+			margin-bottom: 20px;
+                        align-items: center;
+                }
