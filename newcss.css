@@ -84,15 +84,7 @@
 			margin: 0;
 			font-size: 18px;
 		}
-		
-		.footer {
-			background-color: #8ECC80;
-			padding: 20px;
-			text-align: center;
-			color: #fff;
-		}
-                
-                .slide {
+.slide {
                     height: 300px;
 			position: relative;
 			margin-top: 20px;
@@ -101,3 +93,71 @@
 			margin-bottom: 20px;
                         align-items: center;
                 }
+   /* Define a style for the footer element */
+.footer {
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #D4E6F1;
+  color:#A8D8EA;
+  text-align: center;
+ 
+}
+/* Define a style for each paragraph element inside the footer element */
+.footer p {
+  color: black;
+}
+/* Define a style for each anchor element inside the footer element */
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+/* Define a style for each list item element inside the footer element */
+.footer li {
+  display: inline-block;
+}
+/* Define a style for each image element inside the footer element */
+.footer img {
+  width: 20px;
+}
+/* Define a style for the container element */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Define a style for the footer-top element */
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/* Define a style for the footer-text element */
+.footer-text {
+  font-size: 12px;
+ 
+}
+/* Define a style for the footer-links element */
+.footer-links {
+  list-style-type: none;
+  
+}
+/* Define a style for each footer-link element */
+.footer-link {
+  margin: 0 10px;
+  
+}
+/* Define a style for each footer-link element on hover */
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Define a style for the country element */
+.copyright {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
