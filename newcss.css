@@ -1,6 +1,6 @@
 
 		body {
-			background-color: #D4E6F1;
+			background-color: #ffffff;
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
@@ -14,7 +14,7 @@
 		}
 		
 		.navbar {
-			background-color: #A8D8EA;
+			background-color: #D2B48C;
 			overflow: hidden;
 		}
 		
@@ -29,16 +29,13 @@
 		}
 		
 		.navbar a:hover {
-			background-color: #BBD2E1;
+			background-color: #A84448;
 		}
 		
 		.hero-image {
-			background-image: url('L3.jpg');
 			height: 400px;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
 			position: relative;
+                        text-align: center;
 			margin-top: 20px;
 			margin-bottom: 20px;
 		}
@@ -54,7 +51,7 @@
 		}
 		
 		.menu-section {
-			background-color: #F2D7B6;
+			background-color: #D2B48C;
 			padding: 50px;
 			margin-bottom: 20px;
 		}
@@ -99,8 +96,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #D4E6F1;
-  color:#A8D8EA;
+  background-color: #ffffff;
+  color:#ffffff;
   text-align: center;
  
 }
