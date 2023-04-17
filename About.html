@@ -1,28 +1,42 @@
-* {
+
+<html>
+<head>
+	<title>CNJ Restaurant & Bakery</title>
+	<link rel="stylesheet" href="Test1.css" type="text/css"/>
+        <link rel="shortcut icon" href="L4.jpg" type="image/x-icon">
+
+</head>
+    
+    
+<div class="page-wrapper">
+ <div class="nav-wrapper">
+  
+  <nav class="navbar">
+     
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+       <div class="navbar-logo">
+    <img src="l41.png" alt="Logo">
+  </div>
+    <ul class="nav no-search">
+        <li class="nav-item"><a href="Test.html">Home</a></li>
+      <li class="nav-item"><a href="Menu.html">Menu</a></li>
+      <li class="nav-item"><a href="About.html">About</a></li>
+      <li class="nav-item"><a href="Order.html">Orders</a></li>
+   
+      
+    </ul>
+  </nav>
+  </div>
+    <style>
+        * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-/* HEADINGS */
-
-
-h1, p {
-  color: #000;
-  text-align: center;
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  color: #000;
-  font-size: 1.3rem;
-  text-align: center;
-  line-height: 1.4;
-  margin-bottom: 10px;
 }
 
 /* BASIC SETUP */
@@ -40,15 +54,6 @@ h2 {
   background-color: #fff;
 }
 
-.grad-bar {
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-    -webkit-animation: gradbar 15s ease infinite;
-  -moz-animation: gradbar 15s ease infinite;
-  animation: gradbar 15s ease infinite;
-}
 
 /* NAVIGATION */
 .nav-item {
@@ -121,54 +126,8 @@ h2 {
   color: #f2cc4c;
 }
 
-      
-      h1 {
-        font-size: 22px;
-        margin: 0;
-      }
-      
-      section {
-        padding: 30px 20px;
-        border-bottom: 1px solid #ddd;
-        background-color: #F2D7B6;
-      }
-      
-      h2 {
-        font-size: 24px;
-        margin: 0 0 10px;
-        margin-bottom: 20px;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-between;
-			padding: 10px;
-			border: 1px solid #000;
-			border-radius: 5px;
-      }
-      
-      p {
-       margin: 0;
-       text-align: end;
-      }
-      
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      li {
-        margin: 10px 0;
-      }
-      
-      footer1 {
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      }
-    
- /* MOBILE MENU & ANIMATION */
+        
+      /* MOBILE MENU & ANIMATION */
 
 .menu-toggle .bar{
   width: 25px;
@@ -256,7 +215,7 @@ h2 {
 
   /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 720px) { 
   .features {
     flex-direction: column;
     padding: 50px;
@@ -318,19 +277,20 @@ h2 {
   .headline {
     height: 20vh;
   }
-    
-  .feature-container p {
-    margin-bottom: 25px;
+  section{
+       position:absolute;
+      left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 100px;
   }
-  
-  .feature-container {
-    margin-top: 20px;
+  section-img{
+
+      
+      position:absolute;
+      left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 100px;
   }
-  
-  .feature-container:nth-child(2) {
-    order: -1;
-  }
-  
   /* SEARCH DISABLED ON MOBILE */
   
   #search-icon {
@@ -348,3 +308,26 @@ h2 {
   justify-content: center;
 }
 }
+  
+    </style>
+    
+    
+    
+    
+    <section>
+      <h2>Our Story</h2>
+      <p>CNJ Restaurant & Bakery was founded in 2023 by Mom with the goal of providing high-quality food to customers across the globe.</p>
+    </section>
+    
+    <section>
+        <div class= "section-img">
+          <img src="Mom.jpg" alt="Your logo">
+        </div>
+    </section>
+    
+    <section>
+      <h2>Contact Us</h2>
+      <p>Thank you for your interest in CNJ Restaurant & Bakery. If you have any questions or comments, please don't hesitate to reach out to us:</p>
+      <ul>
+        <li>Email: </li>
+        <li>Phone: </li>

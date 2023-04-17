@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CNJ Restaurant & Bakery</title>
+	<link rel="stylesheet" href="Test1.css" type="text/css"/>
+        <link rel="shortcut icon" href="L4.jpg" type="image/x-icon">
+
+</head>
+<body>
+	<div class="banner">
+	  <p>We have a special sale on shrimp!!</p>
+	</div>
+
+	<div class="page-wrapper">
+		<div class="nav-wrapper">
+			<nav class="navbar">
+				<div class="menu-toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<div class="navbar-logo">
+					<img src="l41.png" alt="Logo">
+				</div>
+				<ul class="nav no-search">
+					<li class="nav-item"><a href="Test.html">Home</a></li>
+					<li class="nav-item"><a href="Menu.html">Menu</a></li>
+					<li class="nav-item"><a href="About.html">About</a></li>
+					<li class="nav-item"><a href="Order.html">Orders</a></li>
+					
+
+				</ul>
+			</nav>
+		</div>
+
+		<div class="slideshow">
+			<img src="hf2.png" alt="Your logo">
+			<img src="hf3.png" alt="Your logo">
+			<img src="hf1.jpg" alt="Your logo">
+			<img src="M.jpg" alt="Your logo">
+		</div>
+            <script>  
+                    var slideIndex = 0;
+  var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+
+  setInterval(function() {
+    // Hide all slides
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+
+    // Increment slide index
+    slideIndex++;
+
+    // Reset slide index if it goes out of bounds
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+
+    // Show current slide
+    slides[slideIndex].classList.add("active");
+  }, 3000);
+</script>
+
+	<div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="50%" marginwidth="50%" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Boca Raton&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    
+                    
+                </iframe>
+                <style>
+                
+                .mapouter{
+      position:relative;
+      text-align:center;
+      width:100%;
+      height:400px;}
+                
+  .gmap_canvas {
+      overflow:hidden;
+      background:none!important;
+      width:100%;
+      height:400px;
+ 
+ 
+  
+  }
+                
+  .gmap_iframe {
+      height:400px!important;
+      
+  }
+         
+           </style> 
+          
+        
+        </div>
+    <footer>
+		<p>&copy; 2023 CN Restaurant &amp; Bakery. All Rights Reserved.</p>
+	</footer>	
+	</div>
+
+        </div>
+
+</body>
+</html>
+
+
+
