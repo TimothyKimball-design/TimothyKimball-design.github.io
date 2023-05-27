@@ -26,6 +26,34 @@ h2 {
 }
 
 /* BASIC SETUP */
+.banner {
+  
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  background-color: #000;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 
 .page-wrapper {
   width: 100%;
@@ -35,7 +63,7 @@ h2 {
 .nav-wrapper {
   width: 100%;
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: relative;
   top: 0;
   background-color: #fff;
 }
@@ -62,9 +90,12 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  right: 22%;
-  transform: translateX(-50%);
-  position: absolute;
+  position:absolute;
+  margin-bottom: 120px;
+  left: 50%;
+  transform: translateX(-52%);
+  margin-left:30px;
+  margin-top: 70px;
 }
 
 .navbar-logo img {
@@ -83,10 +114,10 @@ h2 {
 }
 
 .navbar img {
-  height: 200px;
+  height: 320px;
   width: auto;
   justify-self: start;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navbar ul {
@@ -99,8 +130,10 @@ h2 {
   margin: 0;
   position:absolute;
   margin-bottom: 40px;
-  left: 55%;
+  left: 50%;
   transform: translateX(-50%);
+  margin-left: 100px;
+  margin-top: 10px;
 }
 
 
@@ -111,7 +144,7 @@ h2 {
 
 .nav-item a {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
@@ -130,7 +163,7 @@ h2 {
       section {
         padding: 30px 20px;
         border-bottom: 1px solid #ddd;
-        background-color: #F2D7B6;
+        background-color: #ffffff;
       }
       
       h2 {

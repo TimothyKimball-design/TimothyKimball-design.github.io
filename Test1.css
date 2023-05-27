@@ -100,17 +100,24 @@ h2 {
 }
 
 .navbar-logo {
+  list-style: none;
   display: flex;
+  grid-template-columns: repeat(6, 8fr);
   justify-content: center;
-  
-  flex-grow: 1;
-  right: 22%;
+  align-items: end;
+  height: 100%;
+  margin-top: 50px;
+  position:absolute;
+  margin-bottom: 70px;
+  left: 50%;
   transform: translateX(-50%);
-  position: absolute;
+  margin-left: 0px;
+  
 }
 .nav no search{
     display: flex;
     justify-content: center;
+     
 }
 .navbar-logo img {
   height: 200px;
@@ -125,12 +132,13 @@ h2 {
   overflow: hidden;
   justify-content: space-between;
   text-align: center;
+  
    
 }
 
 .navbar img {
-  height: 200px;
-  width: auto;
+  height: 110%;
+  width: 100%;
   justify-self: start;
   margin-left: 20px;
   text-align: center;
@@ -138,12 +146,12 @@ h2 {
 
 .navbar ul {
   list-style: none;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(6, 8fr);
   justify-content: center;
   align-items: end;
   height: 100%;
-  
+  margin-left: 100px;
   position:absolute;
   margin-bottom: 40px;
   left: 50%;
@@ -154,7 +162,7 @@ h2 {
 
 .nav-item a {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
@@ -188,10 +196,12 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 800px;
+  
   }
 
   .slideshow img {
     width: 100%;
+    height: 800px;
     position: absolute;
     top: 0;
     left: 0;
@@ -374,7 +384,7 @@ input {
 
   /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 720px) { 
   .features {
     flex-direction: column;
     padding: 50px;
@@ -395,27 +405,24 @@ input {
   }
   
   /* MOBILE NAVIGATION */
-     
-  .navbar ul {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: start;
-    top: 55px;
+
+   .navbar ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #fff;
     width: 100%;
-    height: calc(100vh - 55px);
-    transform: translate(-101%);
-    text-align: center;
-    overflow: hidden;
   }
   
   .navbar li {
     padding: 15px;
+    
   }
   
   .navbar li:first-child {
     margin-top: 50px;
+    
   }
   
   .navbar li a {
@@ -437,17 +444,7 @@ input {
     height: 20vh;
   }
     
-  .feature-container p {
-    margin-bottom: 25px;
-  }
   
-  .feature-container {
-    margin-top: 20px;
-  }
-  
-  .feature-container:nth-child(2) {
-    order: -1;
-  }
   .section{
        position:absolute;
       left: 50%;
@@ -463,15 +460,6 @@ input {
         
             
                 
-  /* SEARCH DISABLED ON MOBILE */
-  
-  #search-icon {
-    display: none;
-  }
-  
-  .search-input {
-  display: none;
- }
   /* Define a style for the country element */
 .copyright {
   font-size: 14px;

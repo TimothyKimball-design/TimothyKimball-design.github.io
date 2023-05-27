@@ -1,11 +1,15 @@
 
 <html>
 <head>
-	<title>CNJ Restaurant & Bakery  </title>
-	<link rel="stylesheet" href="Test1.css" type="text/css"/>
-        <link rel="shortcut icon" href="L4.JPG" type="image/x-icon">
-
+	<title>CNJ Restaurant & Bakery</title>
+	
+        <link rel="shortcut icon" href="L41.webp" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+     <div class="banner">
+	  <p>Bienvenue! - Welcome to our family restaurant</p>
+	</div>
+
     
     
 <div class="page-wrapper">
@@ -13,30 +17,94 @@
   
   <nav class="navbar">
      
-    <div class="menu-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
+    
        <div class="navbar-logo">
-    <img src="L41.png" alt="Logo">
+    <img src="L41.webp" alt="Logo">
   </div>
+      
     <ul class="nav no-search">
-        <li class="nav-item"><a href="Test.html">Home</a></li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
       <li class="nav-item"><a href="Menu.html">Menu</a></li>
-      <li class="nav-item"><a href="About.html">About</a></li>
       <li class="nav-item"><a href="Order.html">Orders</a></li>
+      <li class="nav-item"><a href="About.html">About</a></li>
    
       
     </ul>
   </nav>
   </div>
     <style>
-        * {
+       * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+
+.banner {
+  
+  background-size: cover;
+  background-position: center;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  background-color: #000;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #000;
+}
+
+
+/* HEADINGS */
+
+
+h1, p {
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
 
 /* BASIC SETUP */
@@ -48,30 +116,49 @@
 
 .nav-wrapper {
   width: 100%;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  height:300px;
+  position: sticky; 
+  position: relative;
   top: 0;
   background-color: #fff;
+
 }
 
 
 /* NAVIGATION */
 .nav-item {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  
+  
 
 }
 
 .navbar-logo {
-  display: grid;
+  list-style: none;
+  display: flex;
+  grid-template-columns: repeat(6, 8fr);
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  right: 22%;
+  align-items: end;
+  height: 300px;
+  margin-top: 50px;
+  position:absolute;
+  margin-bottom: 70px;
+  left: 50%;
   transform: translateX(-50%);
-  position: absolute;
+  margin-right:auto;
+  margin-left:auto;
+  
 }
 
+.nav no search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-right:auto;
+  margin-left:auto;
+     
+}
 .navbar-logo img {
   height: 200px;
 }
@@ -84,39 +171,40 @@
   height: 300px;
   overflow: hidden;
   justify-content: space-between;
+  text-align: center;
+  
    
 }
 
 .navbar img {
-  height: 200px;
-  width: auto;
+  height: 107%;
+  width: 100%;
   justify-self: start;
   margin-left: 20px;
+  text-align: center;
+  margin-bottom:10px;
 }
 
 .navbar ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(6, 1.5fr);
-  justify-content: center;
-  align-items: end;
-  height: 100%;
-  margin: 0;
+  display: flex;
+
+ 
+  
+  padding-top:280px;
+  
+ 
   position:absolute;
   margin-bottom: 40px;
-  left: 55%;
+  left:50%;
   transform: translateX(-50%);
+  
 }
 
-
-.navbar-item {
-  padding: 0 20px; /* Increase the padding to make the items wider */
-  margin: 0 10px; /* Add some margin to separate the items */
-}
 
 .nav-item a {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
@@ -126,84 +214,34 @@
   color: #f2cc4c;
 }
 
-        
-      /* MOBILE MENU & ANIMATION */
 
-.menu-toggle .bar{
-  width: 25px;
-  height: 3px;
-  background-color: #3f3f3f;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+
+.content {
+  display: flex;
+  align-items: center;
 }
 
-.menu-toggle {
-  justify-self: end;
-  margin-right: 25px;
-  display: none;
+.left-image {
+  width: 20%;
+  height: 20%;
+  margin-right: 20px;
 }
 
-.menu-toggle:hover{
-  cursor: pointer;
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#mobile-menu.is-active .bar:nth-child(2){
-  opacity: 0;
+h2 {
+  font-size: 24px;
+  margin: 0;
 }
 
-#mobile-menu.is-active .bar:nth-child(1){
-  -webkit-transform: translateY(8px) rotate(45deg);
-  -ms-transform: translateY(8px) rotate(45deg);
-  -o-transform: translateY(8px) rotate(45deg);
-  transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-menu.is-active .bar:nth-child(3){
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-  -ms-transform: translateY(-8px) rotate(-45deg);
-  -o-transform: translateY(-8px) rotate(-45deg);
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-/* KEYFRAME ANIMATIONS */
-
-@-webkit-keyframes gradbar {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@-moz-keyframes gradbar {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@keyframes gradbar {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
+p {
+  margin: 0;
+}        
+    
 /* Define a style for the country element */
 .copyright {
   font-size: 14px;
@@ -215,7 +253,7 @@
 
   /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 720px) { 
+@media only screen and (max-width: 768px) { 
   .features {
     flex-direction: column;
     padding: 50px;
@@ -227,79 +265,99 @@
     font-size: 1.9rem;
   }
   
-  h2 {
-    font-size: 1rem;
-  }
+ .content {
+  display: flex;
+  align-items: center;
+}
+
+.left-image {
+  width: 20%;
+  height: 20%;
+  margin-right: 20px;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}    
   
-  p {
-    font-size: 0.8rem;
-  }
-  
-  /* MOBILE NAVIGATION */
-     
-  .navbar ul {
-    display: flex;
+    
+  .banner {
+  height: 70px;
+}
+    .features {
     flex-direction: column;
-    position: fixed;
-    justify-content: start;
-    top: 55px;
-    background-color: #fff;
+    padding: 50px;
+  }
+  
+  
+  
+
+
+/* MOBILE NAVIGATION */
+    .navbar-logo {
+    height:100%;
+    width:100%;
+    position:absolute;
+    left:45%;
+    margin-top:100px;
+    margin-bottom:100px;
+  
+    
+    }
+    .nav-item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar{
+     height:300px;
+     width:100%;
+        
+    }
+    
+   .navbar ul {
+    display:flex;
     width: 100%;
-    height: calc(100vh - 55px);
-    transform: translate(-101%);
-    text-align: center;
-    overflow: hidden;
+    height:320px;
+    padding-top: 0px;
+    margin-top: 40px;
+    position:relative;
+    padding-right:20px;
+    justify-content: center;
+    
   }
   
   .navbar li {
-    padding: 15px;
+    margin-top: 270px;
+    margin-bottom: 15px;
+    
   }
   
-  .navbar li:first-child {
-    margin-top: 50px;
-  }
-  
+ 
   .navbar li a {
-    font-size: 1rem;
+    font-size: 1.3rem;
+ 
   }
    
-  .menu-toggle, .bar {
-    display: block;
-    cursor: pointer;
-  }
-  
-  .mobile-nav {
-  transform: translate(0%)!important;
-}
   
   /* SECTIONS */
   
   .headline {
     height: 20vh;
   }
-  section{
-       position:absolute;
-      left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 100px;
-  }
-  section-img{
-
-      
-      position:absolute;
-      left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 100px;
-  }
-  /* SEARCH DISABLED ON MOBILE */
+    
   
-  #search-icon {
-    display: none;
-  }
-  
-  .search-input {
-  display: none;
- }
+ 
   /* Define a style for the country element */
 .copyright {
   font-size: 14px;
@@ -311,18 +369,18 @@
   
     </style>
     
+   
     
-    
-    
+   
     <section>
+      
+        <div class="content">
+    <img src="Mom.webp" alt="Image" class="left-image">
+    <div class="right-text">
       <h2>Our Story</h2>
       <p>CNJ Restaurant & Bakery was founded in 2023 by Mom with the goal of providing high-quality food to customers across the globe.</p>
-    </section>
-    
-    <section>
-        <div class= "section-img">
-          <img src="Mom.JPG" alt="Your logo">
-        </div>
+    </div>
+  </div>
     </section>
     
     <section>
@@ -331,3 +389,4 @@
       <ul>
         <li>Email: </li>
         <li>Phone: </li>
+       

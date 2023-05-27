@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>CNJ Restaurant & Bakery</title>
+        <link rel="shortcut icon" href="L41.webp" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+</head>
+
+<style> 
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+         }
+
+
+.banner {
+  
+  background-size: cover;
+  background-position: center;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  background-color: #000;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #000;
+}
+
+
+/* HEADINGS */
+
+
+h1, p {
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* BASIC SETUP */
+
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height:100%;
+  position: sticky; 
+  position: relative;
+  top: 0;
+  background-color: #fff;
+
+}
+
+
+/* NAVIGATION */
+.nav-item {
+  padding-left: 20px;
+  
+  
+
+}
+
+.navbar-logo {
+  list-style: none;
+  display: flex;
+  grid-template-columns: repeat(6, 8fr);
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+  margin-top: 50px;
+  position:absolute;
+  margin-bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right:auto;
+  margin-left:auto;
+  
+}
+.nav no search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-right:auto;
+  margin-left:auto;
+     
+}
+.navbar-logo img {
+  height: 200px;
+}
+
+
+.navbar {
+  display: flex;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  justify-content: space-between;
+  text-align: center;
+  
+   
+}
+
+.navbar img {
+  height: 107%;
+  width: 100%;
+  justify-self: start;
+  margin-left: 20px;
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+
+ 
+  align-items: end;
+  height: 100%;
+  padding-top:270px;
+  
+ 
+  position:absolute;
+  margin-bottom: 40px;
+  left:50%;
+  transform: translateX(-50%);
+  
+}
+
+
+.nav-item a {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #f2cc4c;
+}
+
+/* SECTIONS */
+
+.slide {
+                    height: 300px;
+			position: relative;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 50px;
+			margin-bottom: 20px;
+                        align-items: center;
+                }
+
+.logo-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 790px;
+   background-color: #A84448;
+}
+ .slideshow {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1100px;
+    
+    
+  }
+
+ .slideshow img {
+    width: 768px; 
+    height: 1024px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left:auto;
+    margin-right:auto;
+   
+  }
+
+  .slideshow img:first-child {
+    opacity: 1;
+  }
+
+  .slideshow img.active {
+    opacity: 1;
+  }
+.logo-container img {
+   max-height: 100%;
+   max-width: 100%;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+  background-color: #A84448;
+  display: flex;
+  padding: 50px 20px;
+  justify-content: space-around;
+}
+
+.feature-container {
+  flex-basis: 30%;
+  margin-top: 10px;
+  
+}
+
+.feature-container p {
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.feature-container img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.mapouter  {
+            position:relative;
+            text-align:right;
+            width:100%;
+            height:400px;
+            
+}
+.gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            width:100%;
+            height:400px;
+}
+.gmap_iframe {
+            height:400px!important;
+}
+
+section{
+    height: 100px;
+    margin: 80px;
+    
+}
+section1{
+    height: 150px;
+    
+    color: #000;
+}
+
+footer{
+     margin-top: 50px;
+}
+
+/* Define a style for the country element */
+.copyright {
+ 
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    
+
+  /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (min-width: 360px) and (max-width: 768px)  { 
+    .banner {
+  height: 70px;
+}
+    section{
+    height:150px;
+}
+    .features {
+    flex-direction: column;
+    padding: 50px;
+  }
+  
+  /* MOBILE HEADINGS */
+  
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+
+
+/* MOBILE NAVIGATION */
+    .navbar-logo {
+    height:100%;
+    width:100%;
+    position:absolute;
+    left:45%;
+    margin-top:100px;
+    margin-bottom:100px;
+  
+    
+    }
+    .nav-item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar{
+     height:300px;
+     width:100%;
+        
+    }
+    
+   .navbar ul {
+    display:flex;
+    width: 100%;
+    height:100%;
+    padding-top: 0px;
+    margin-top: 40px;
+    position:relative;
+    padding-right:20px;
+    justify-content: center;
+    
+  }
+  
+  .navbar li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .navbar li:first-child {
+    margin-top: 50px;
+    
+  }
+  
+  .navbar li a {
+    font-size: 1.3rem;
+  }
+   
+  
+  /* SECTIONS */
+  
+  .headline {
+    height: 20vh;
+  }
+    
+  
+             
+  /* Define a style for the country element */
+.copyright {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow{ 
+  margin-bottom: 500px;
+}
+.slideshow img {
+    width: 360px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+   
+   
+  }
+
+
+}
+@media only screen and (max-width: 359px) {
+    .slideshow img {
+    width: 240px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+
+  }
+</style>
+
+
+
+
+<body>
+	<div class="banner">
+	  <p>Bienvenue! - Welcome to our family restaurant</p>
+	</div>
+
+	<div class="page-wrapper">
+		<div class="nav-wrapper">
+			<nav class="navbar">
+				
+				<div class="navbar-logo">
+					<img src="L41.webp" alt="Logo">
+				</div>
+				<ul class="nav no-search">
+					<li class="nav-item"><a href="index.html">Home</a></li>
+					<li class="nav-item"><a href="Menu.html">Menu</a></li>
+					<li class="nav-item"><a href="Order.html">Orders</a></li>
+					<li class="nav-item"><a href="About.html">About</a></li>
+					
+
+				</ul>
+			</nav>
+		</div>
+
+
+            
+            
+		<div class="slideshow">
+                    <img src="hf2.webp" alt="Food"> 
+                    <img src="hf3.webp" alt="Food">
+                    <img src="hf1.webp" alt="Food"> 
+			
+                    <img src="hf5.webp" alt="Food"> 
+                    <img src="hf6.webp" alt="Food">
+                       
+		</div>
+            <script>  
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+
+            setInterval(function() {
+            // Hide all slides
+             for (var i = 0; i < slides.length; i++) {
+             slides[i].classList.remove("active");
+                }
+
+            // Increment slide index
+            slideIndex++;
+
+            // Reset slide index if it goes out of bounds
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+                }
+
+            // Show current slide
+            slides[slideIndex].classList.add("active");
+            }, 3000);
+            </script>
+
+            <section1>
+      <h2>We are located at Lake Worth!!</h2>
+</section1>
+
+            <div class="mapouter">
+       
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=lake worth&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    
+                </iframe>
+                <a href="https://embed-googlemap.com">embed google maps</a>
+            </div>
+            
+        </div>
+          </div>
+
+
+    <section>
+      <h2>CNJ Restaurant & Bakery</h2>
+      <p>Thank you for your interest in CNJ Restaurant & Bakery. If you have any questions or comments, please don't hesitate to reach out to us:</p>
+      <ul>
+        <li>Email: </li>
+        <li>Phone: </li>
+    </section>
+        
+
+  
+    
+    
+<footer>
+		<p>&copy; 2023 CN Restaurant &amp; Bakery. All Rights Reserved.</p>
+	</footer>	
+	
+<script>
+                
+               
+$('.menu-toggle').click(function(){
+   $(".nav no-search").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+            </script>
+      
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBNLpQ7HdJH9pEB_edF2YkrG4UpPk5xxjs",
+    authDomain: "cnj-restaurant.firebaseapp.com", 
+    projectId: "cnj-restaurant",
+    storageBucket: "cnj-restaurant.appspot.com",
+    messagingSenderId: "823740008979",
+    appId: "1:823740008979:web:1ae975dc719eecd443cde6",
+    measurementId: "G-RTRQGPQXNE"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
+
+
+

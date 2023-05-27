@@ -31,29 +31,10 @@ $('.menu-toggle').click(function(){
   }, 3000);
   
   
-  let cart = [];
+const menuIcon = document.querySelector('.menu-icon');
+const navbarList = document.querySelector('.navbar ul');
 
-function addToCart(item) {
-  cart.push(item);
-  alert("Item added to cart");
-}
-
-function removeFromCart(item) {
-  for (let i = 0; i < cart.length; i++) {
-    if (cart[i] === item) {
-      cart.splice(i, 1);
-      alert("Item removed from cart");
-      return;
-    }
-  }
-  alert("Item not found in cart");
-}
-
-function displayCart() {
-  let cartItems = "";
-  for (let i = 0; i < cart.length; i++) {
-    cartItems += cart[i] + "\n";
-  }
-  alert("You have the following items in your cart:\n" + cartItems);
-}
+menuIcon.addEventListener('click', () => {
+  navbarList.classList.toggle('show');
+});
 
