@@ -1,395 +1,975 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CNJ Restaurant & Bakery</title>
-	
-        <link rel="shortcut icon" href="L41.webp" type="image/x-icon">
+<html lang="en">
+    <head>
+        <title>CNJ Restaurant & Bakery</title>
+        <link rel="shortcut icon" href="L41.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style> 
-        
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
 
+    </head>
+    <style>
 
-.banner {
-  
-  background-size: cover;
-  background-position: center;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #000;
-  background-color: #000;
-}
-
-.banner h1 {
-  color: #fff;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  padding: 20px;
-}
-
-.banner p {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-.btn {
-  background-color: #fff;
-  color: #000;
-  padding: 15px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn:hover {
-  background-color: #000;
-  color: #000;
-}
-
-
-/* HEADINGS */
-
-
-h1, p {
-  color: #000;
-  text-align: center;
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  color: #000;
-  font-size: 1.3rem;
-  text-align: center;
-  line-height: 1.4;
-  margin-bottom: 10px;
-}
-
-/* BASIC SETUP */
-
-.page-wrapper {
-  width: 100%;
-  height: auto;
-}
-
-.nav-wrapper {
-  width: 100%;
-  height:100%;
-  position: sticky; 
-  position: relative;
-  top: 0;
-  background-color: #fff;
-
-}
-
-
-/* NAVIGATION */
-.nav-item {
-  padding-left: 20px;
-  
-  
-
-}
-
-.navbar-logo {
-  list-style: none;
-  display: flex;
-  grid-template-columns: repeat(6, 8fr);
-  justify-content: center;
-  align-items: end;
-  height: 100%;
-  margin-top: 50px;
-  position:absolute;
-  margin-bottom: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-right:auto;
-  margin-left:auto;
-  
-}
-.nav no search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin-right:auto;
-  margin-left:auto;
-     
-}
-.navbar-logo img {
-  height: 200px;
-}
-
-
-.navbar {
-  display: flex;
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
-  height: 300px;
-  overflow: hidden;
-  justify-content: space-between;
-  text-align: center;
-  
-   
-}
-
-.navbar img {
-  height: 107%;
-  width: 100%;
-  justify-self: start;
-  margin-left: 20px;
-  text-align: center;
-  margin-bottom:10px;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-
- 
-  align-items: end;
-  height: 100%;
-  padding-top:270px;
-  
- 
-  position:absolute;
-  margin-bottom: 40px;
-  left:50%;
-  transform: translateX(-50%);
-  
-}
-
-
-.nav-item a {
-  color: #000;
-  font-size: 1.1rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-}
-
-.nav-item a:hover {
-  color: #f2cc4c;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
 
 
 
 
-/* Define a style for the country element */
-.copyright {
- 
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-   .menu {
-  
-  padding:20px;
-  text-align: center;
-  padding: 50px 0;
-  background-color: #f5f5f5;
-}
-
-.menu-heading {
-  margin-bottom: 50px;
-}
-
-.menu-heading h2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
-
-.menu-item {
-  margin-bottom: 50px;
-}
-
-.menu-item h3 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.menu-item p {
-  margin-bottom: 5px;
-}
-
-.menu-item p:last-child {
-  font-weight: bold;
-}
- 
-
-  /* Mobile Devices - Phones/Tablets */
-
-@media only screen and (max-width: 768px)  { 
-    .banner {
-  height: 70px;
-}
-    section{
-    height:150px;
-}
-    .features {
-    flex-direction: column;
-    padding: 50px;
-  }
-  
-  /* MOBILE HEADINGS */
-  
-  h1 {
-    font-size: 1.9rem;
-  }
-  
-  h2 {
-    font-size: 1rem;
-  }
-  
-  p {
-    font-size: 0.8rem;
-  }
+        /* HEADINGS */
 
 
-/* MOBILE NAVIGATION */
-    .navbar-logo {
-    height:100%;
-    width:100%;
-    position:absolute;
-    left:45%;
-    margin-top:100px;
-    margin-bottom:100px;
-  
-    
-    }
-    .nav-item{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .navbar{
-     height:300px;
-     width:100%;
-        
-    }
-    
-   .navbar ul {
-    display:flex;
-    width: 100%;
-    height:100%;
-    padding-top: 0px;
-    margin-top: 40px;
-    position:relative;
-    padding-right:20px;
-    justify-content: center;
-    
-  }
-  
-  .navbar li {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    
-  }
-  
-  .navbar li:first-child {
-    margin-top: 50px;
-    
-  }
-  
-  .navbar li a {
-    font-size: 1.3rem;
-  }
-   
-  
-  /* SECTIONS */
-  
-  .headline {
-    height: 20vh;
-  }
-    
+        h1, p {
+            color: #1d1d1f;
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+
+       
+        h21 {
+            color: #000;
+            font-size: 16px;
+            text-align: center;
+            font-weight:600;
+            letter-spacing: 0em;
+            line-height: 1.1;
+            margin-bottom: 70px;
+            margin-top:40px;
+        }
+
+        /* Define a style for the country element */
+        .copyright {
+
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu {
+
+            padding:20px;
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        .menu-heading {
+            margin-bottom: 50px;
+        }
+
+        .menu-heading h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        .menu-item {
+            margin-bottom: 50px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            margin-bottom: 5px;
+        }
+
+        .menu-item p:last-child {
+            font-weight: bold;
+        }
+
+
+        /* Mobile Devices - Phones/Tablets */
+
+        @media only screen and (max-width: 768px)  {
+            .banner {
+                height: 70px;
+            }
+            section{
+                height:150px;
+            }
+            .features {
+                flex-direction: column;
+                padding: 50px;
+            }
+
+            /* MOBILE HEADINGS */
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+
+
+
+
+
+            /* SECTIONS */
+
+            .headline {
+                height: 20vh;
+            }
+        }
 
     </style>
-  
-  
 
-	<div class="banner">
-	  <p>Bienvenue! - Welcome to our family restaurant</p>
-	</div>
 
-	<div class="page-wrapper">
-		<div class="nav-wrapper">
-			<nav class="navbar">
-				
-				<div class="navbar-logo">
-					<img src="L41.webp" alt="Logo">
-				</div>
-				<ul class="nav no-search">
-					<li class="nav-item"><a href="index.html">Home</a></li>
-					<li class="nav-item"><a href="Menu.html">Menu</a></li>
-					<li class="nav-item"><a href="Order.html">Orders</a></li>
-					<li class="nav-item"><a href="About.html">About</a></li>
-					
 
-				</ul>
-			</nav>
-		</div>
-     
-   
-     
-     <section class="menu">
-  <div class="menu-heading">
-    <h2>Order</h2>
-  </div>
-  
-    <div class="menu-item">
-      <h3>Item 1</h3>
-      <p>Description of item 1.</p>
-      <p>$10</p>
-       <form action="https://buy.stripe.com/test_4gw3e8dQDeNR58I4gi">
-  <input type="submit" value="Pay Now">
-</form>
+    <body>
+        <style>
+            .banner {
+                position: relative;
+                height: 160px;
+                background-color: #f6f6f6;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                perspective: 800px;
+            }
+
+            .banner:before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: 0;
+                width: 100%;
+                height: 20px;
+                background-color: #fff;
+                transform: skewY(-5deg);
+                transition: transform 0.3s ease;
+            }
+
+            .banner:hover:before {
+                transform: skewY(-10deg) translateY(-20px);
+            }
+
+            .banner h1 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                color: #f2cc4c;
+            }
+
+            .banner:hover h1 {
+                transform: scale(1.05);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .banner p {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                padding: 0 20px;
+                transition: opacity 0.3s ease;
+            }
+
+            .banner:hover p {
+                opacity: 0.8;
+            }
+
+            @media (min-width: 360px) and (max-width: 768px) {
+                .banner {
+                    height: auto;
+                    padding: 20px;
+                }
+
+                .banner:before {
+                    display: none;
+                }
+
+                .banner h1 {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+
+                .banner p {
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media (max-width: 359px) {
+                .banner h1 {
+                    font-size: 1.5rem;
+                    padding: 8px;
+                }
+
+                .banner p {
+                    font-size: 1rem;
+                    margin-bottom: 5px;
+                }
+            }
+        </style>
+        <div class="banner">
+            <h1>Bienvenue!</h1>
+            <p>Welcome to our family restaurant</p>
+        </div>
+    </body>
+
+    <style>
+        .page-wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav-wrapper {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+        }
+
+        .nav-item {
+            padding-left: 20px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .navbar-logo img {
+            height: 240px;
+            max-width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li:first-child {
+            margin-left: 0;
+        }
+
+        .navbar ul li a {
+            color: #1d1d1f;
+            font-size: 24px;
+            font-weight: 400;
+            text-decoration: none;
+            transition: color 0.3s ease-out;
+        }
+
+        .navbar ul li a:hover {
+            color: #f2cc4c;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar-logo img {
+                height: 200px;
+
+            }
+
+            .nav-item {
+                padding: 0 10px;
+            }
+
+
+            .navbar ul li {
+                margin: 15px 0;
+            }
+
+            .navbar ul {
+                margin-bottom: 0;
+            }
+
+
+            .navbar ul li a {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 359px) {
+            .navbar-logo {
+                width: 160px;
+
+            }
+            .navbar ul li a {
+                font-size: 18px;
+            }
+
+        }
+    </style>
+
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+            <nav class="navbar">
+                <a href="index.html">
+                    <div class="navbar-logo">
+                        <img src="L41.png" alt="Logo">
+                    </div>
+                </a>
+                <ul class="navbar-ul">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="Menu.html">Menu</a></li>
+                    <li class="nav-item"><a href="Order.html">Orders</a></li>
+                    <li class="nav-item"><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="menu-item">
-      <h3>Item 2</h3>
-      <p>Description of item 2.</p>
-      <p>$15</p>
-      <form action="https://buy.stripe.com/test_4gw3e8dQDeNR58I4gi">
-  <input type="submit" value="Pay Now">
-</form>
+
+    <style>
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            max-width: calc(100% - 40px);
+        }
+
+        .chat-button {
+            display: block;
+            width: 65px;
+            height: 65px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 65px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .chatbox-container {
+            display: none;
+            position: fixed;
+            bottom: 105px;
+            right: 20px;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            overflow: auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+            z-index: 9998;
+            max-height: 400px;
+        }
+
+        .chatbox-container.open {
+            display: block;
+        }
+
+        .chatbox p {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .user-input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+
+        }
+
+        .user-input input[type="text"] {
+            flex-grow: 1;
+            width: auto;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .user-input input[type="text"]:focus {
+            border-color: #4285f4;
+            background-color: #fff;
+        }
+
+        .user-input button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .user-input button:hover {
+            background-color: #3367d6;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .chatbox-container.fade-in {
+            animation: fade-in 0.3s ease;
+        }
+
+        .chat-button:active {
+            transform: scale(0.9);
+        }
+
+        .user-input button:active {
+            transform: scale(0.9);
+        }
+
+        .chatbox-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbox-header .minimize-button {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        .chatbox-header .minimize-button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+
+
+
+    <div class="chat-container">
+        <div class="chat-button" onclick="toggleChatbox()">?</div>
+        <div class="chatbox-container" id="chatbox-container">
+            <div class="chatbox-header">
+                <span>Time &copy;</span>
+                <div class="minimize-button" onclick="minimizeChatbox()">&#8211;</div>
+            </div>
+            <div class="chatbox" id="chatbox"></div>
+            <div class="user-input">
+                <input type="text" id="userInput" onkeydown="sendMessage(event)" placeholder="Type your message..." />
+
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
     </div>
-    <div class="menu-item">
-      <h3>Item 3</h3>
-      <p>Description of item 3.</p>
-      <p>$20</p>
-      <form action="https://buy.stripe.com/test_4gw3e8dQDeNR58I4gi">
-  <input type="submit" value="Pay Now">
-</form>
+
+
+
+    <script>
+
+        var chatboxOpen = false;
+
+        function toggleChatbox() {
+            var chatboxContainer = document.getElementById('chatbox-container');
+            var userInput = document.querySelector('.user-input');
+
+            if (chatboxOpen) {
+                chatboxContainer.classList.remove('open');
+                chatboxContainer.classList.remove('fade-in');
+                chatboxOpen = false;
+            } else {
+                chatboxContainer.classList.add('open');
+                chatboxContainer.classList.add('fade-in');
+                chatboxOpen = true;
+            }
+        }
+
+        function minimizeChatbox() {
+            var chatboxContainer = document.getElementById('chatbox-container');
+            chatboxContainer.classList.remove('open');
+            chatboxContainer.classList.remove('fade-in');
+            chatboxOpen = false;
+        }
+
+
+
+
+        function sendMessage(event) {
+            if (event.keyCode === 13) { // Check if the Enter key is released
+                var userInput = document.getElementById("userInput");
+                var message = userInput.value;
+
+                // Display user message in chatbox
+                displayMessage("You: " + message);
+
+                // Process user message
+                var response = processMessage(message);
+
+                // Display response in chatbox
+                displayMessage("Bot: " + response);
+
+                // Clear input field
+                userInput.value = "";
+            }
+        }
+
+
+        function displayMessage(message) {
+            var chatbox = document.getElementById("chatbox");
+            var messageElement = document.createElement("p");
+            messageElement.textContent = message;
+            chatbox.appendChild(messageElement);
+
+            // Scroll to the bottom of the chatbox
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processMessage(userMessage) {
+            // Preprocess the user's message if necessary
+            var preprocessedMessage = preprocess(userMessage);
+
+            // Analyze the user's message to understand its intent or purpose
+            var intent = analyzeIntent(preprocessedMessage);
+
+            // Extract named entities from the user's message
+            var entities = extractEntities(preprocessedMessage);
+
+            // Perform sentiment analysis on the user's message
+            var sentiment = analyzeSentiment(preprocessedMessage);
+
+            // Based on the intent or purpose, determine the appropriate action or response
+            var response;
+            switch (intent) {
+                case "menu":
+                    response = getRestaurantMenu();
+                    break;
+                case "order":
+                    response = makeOrder(entities);
+                    break;
+                case "opening_hours":
+                    response = getOpeningHours();
+                    break;
+                case "location":
+                    response = getRestaurantLocation();
+                    break;
+                case "greeting":
+                    response = generateGreeting();
+                    break;
+                default:
+                    response = generateDefaultResponse();
+            }
+
+            // Add sentiment analysis to the response
+            if (sentiment < 0) {
+                response += " Is there anything specific I can assist you with?";
+            } else if (sentiment > 0) {
+                response += " We're glad you're interested! How can we help you today?";
+            }
+
+            return response;
+        }
+
+        function extractEntities(message) {
+            // Extract named entities from the user's message using pattern matching or regular expressions
+            var entities = {};
+
+            // Define the patterns for different entities
+            var patterns = {
+                date: /date: (\w+)/i,
+                time: /time: (\w+)/i,
+                partySize: /party size: (\w+)/i
+            };
+
+            // Extract entities based on the defined patterns
+            for (var entity in patterns) {
+                var pattern = patterns[entity];
+                var match = message.match(pattern);
+                if (match) {
+                    entities[entity] = match[1];
+                }
+            }
+
+            return entities;
+        }
+
+
+        function analyzeSentiment(message) {
+            // Perform sentiment analysis on the user's message considering negation, intensifiers, diminishers, and cues from punctuation
+
+            var sentimentScores = {
+                good: 1,
+                great: 1,
+                awesome: 1,
+                bad: -1,
+                terrible: -1,
+                awful: -1
+            };
+
+            var words = message.split(" ");
+            var sentimentScore = 0;
+            var negate = false;
+            var intensifier = 1;
+
+            words.forEach(function (word) {
+                // Check for negation
+                if (word === "not" || word === "no") {
+                    negate = true;
+                    return;
+                }
+
+                // Check for intensifiers and diminishers
+                if (word === "very" || word === "extremely") {
+                    intensifier = 2;
+                    return;
+                } else if (word === "slightly" || word === "a bit") {
+                    intensifier = 0.5;
+                    return;
+                }
+
+                // Remove punctuation and convert to lowercase for matching
+                var cleanedWord = word.replace(/[^\w\s]|_/g, "").toLowerCase();
+
+                // Check for sentiment words and adjust sentiment score
+                if (sentimentScores.hasOwnProperty(cleanedWord)) {
+                    sentimentScore += sentimentScores[cleanedWord] * intensifier * (negate ? -1 : 1);
+                    negate = false; // Reset negation for the next word
+                    intensifier = 1; // Reset intensifier for the next word
+                }
+            });
+
+            return sentimentScore;
+        }
+
+
+
+
+        function preprocess(userMessage) {
+            // Perform preprocessing on the user's message
+            // e.g., removing unnecessary characters, converting to lowercase, etc.
+            return userMessage.toLowerCase().trim();
+        }
+
+        function analyzeIntent(preprocessedMessage) {
+            // Analyze the preprocessed message to determine the user's intent or purpose using regular expressions and tokenization
+
+            var intents = {
+                menu: /(menu|food|dishes)/i,
+                order: /(order|purchase)/i,
+                opening_hours: /(opening hours|business hours)/i,
+                location: /(location|address)/i,
+                greeting: /(hello|hi)/i
+            };
+
+            var tokens = preprocessedMessage.split(" ");
+
+            for (var intent in intents) {
+                var pattern = intents[intent];
+                if (pattern.test(preprocessedMessage)) {
+                    return intent;
+                }
+                for (var i = 0; i < tokens.length; i++) {
+                    if (pattern.test(tokens[i])) {
+                        return intent;
+                    }
+                }
+            }
+
+            return "default";
+        }
+
+
+        function generateGreeting() {
+            // Generate a greeting message for the user
+            var greetings = [
+                "Welcome to our restaurant! How can I assist you today?",
+                "Hello! How may I help you?",
+                "Hi there! What can I do for you?",
+            ];
+
+            return getRandomResponse(greetings);
+        }
+
+        function generateDefaultResponse() {
+            // Generate a default response when the user's intent is not recognized
+            var defaultResponses = [
+                "I'm sorry, I couldn't understand your request. How can I assist you today?",
+                "Apologies, but I'm not sure what you're asking. Can you please rephrase?",
+                "I'm afraid I don't have the information you're looking for. Is there anything else I can help with?",
+            ];
+
+            return getRandomResponse(defaultResponses);
+        }
+
+        function getRandomResponse(responses) {
+            // Generate a random response from the given array of responses
+            var randomIndex = Math.floor(Math.random() * responses.length);
+            return responses[randomIndex];
+        }
+
+        function getRestaurantMenu() {
+            // Fetch and return the restaurant's menu
+            // You can replace this with your own implementation to fetch the menu from a database or an API
+            const menu = [
+                {
+                    name: "Meat",
+                    price: "$10",
+                    description: "Meat that is juicy and toppings",
+                },
+                {
+                    name: "Haitian spaghetti",
+                    price: "$15",
+                    description: "Spaghetti with creamy sauce",
+                },
+                        // Add more menu items as needed
+            ];
+
+            // Format the menu items as a string
+            const formattedMenu = menu
+                    .map(
+                            (item) =>
+                            `${item.name} - ${item.price}\n${item.description}`
+                    )
+                    .join("\n\n");
+
+            var menuResponses = [
+                "Here is our menu:\n\n" + formattedMenu,
+                "Sure! Here's what we offer:\n\n" + formattedMenu,
+                "Take a look at our menu:\n\n" + formattedMenu,
+            ];
+
+            return getRandomResponse(menuResponses);
+        }
+
+        function makeOrder() {
+            // Placeholder function to handle making a reservation
+            var reservationResponses = [
+                "To make a order, please call our restaurant at 123-456-7890.",
+                "You can make a order by calling us at 123-456-7890.",
+                "For orders, please contact us at 123-456-7890.",
+            ];
+
+            return getRandomResponse(reservationResponses);
+        }
+
+        function getOpeningHours() {
+            // Placeholder function to fetch and return the restaurant's opening hours
+            var openingHoursResponses = [
+                "We are open from Monday to Saturday, 9 AM to 10 PM.",
+                "Our opening hours are Monday to Saturday, 9 AM to 10 PM.",
+                "You can visit us from Monday to Saturday, 9 AM to 10 PM.",
+            ];
+
+            return getRandomResponse(openingHoursResponses);
+        }
+
+        function getRestaurantLocation() {
+            // Placeholder function to fetch and return the restaurant's location
+            var locationResponses = [
+                "Our restaurant is located at 123 Main Street, City, State.",
+                "You can find us at 123 Main Street, City, State.",
+                "We are situated at 123 Main Street, City, State.",
+            ];
+
+            return getRandomResponse(locationResponses);
+        }
+
+    </script>
+
+
+
+
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <stripe-pricing-table pricing-table-id="prctbl_1MzTQ9EPSNQKetWiXwRyOSHI"
+                          publishable-key="pk_test_51MydHxEPSNQKetWiQWub6k9xsJNIawFyW0DlTe5mfRgyD3BYznSbnOhIIpkvhpNARjOpVygVusIpzVX9nGbxOzmU00HzOgAyW5">
+    </stripe-pricing-table>
+
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <stripe-pricing-table pricing-table-id="prctbl_1MzTTEEPSNQKetWilrPfLdpW"
+                          publishable-key="pk_test_51MydHxEPSNQKetWiQWub6k9xsJNIawFyW0DlTe5mfRgyD3BYznSbnOhIIpkvhpNARjOpVygVusIpzVX9nGbxOzmU00HzOgAyW5">
+    </stripe-pricing-table>
+
+
+</div>
+
+<style>
+    .gpsection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        border-radius: 8px;
+
+        height: 300px;
+    }
+
+    .gpheading {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f2cc4c;
+        margin-bottom: 10px;
+    }
+
+    .gpcontact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #666666;
+    }
+
+    .gpaddress,
+    .gpphone {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .gpphone {
+        font-weight: bold;
+    }
+</style>
+
+<section class="gpsection">
+    <h2 class="gpheading">CNJ Restaurant & Bakery</h2>
+    <div class="gpcontact">
+        <p class="gpaddress">7 N Dixie Hwy, Lake Worth Beach, FL 33460</p>
+        <p class="gpphone">777-777-7777</p>
     </div>
-  
 </section>
 
-<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1MzTQ9EPSNQKetWiXwRyOSHI"
-publishable-key="pk_test_51MydHxEPSNQKetWiQWub6k9xsJNIawFyW0DlTe5mfRgyD3BYznSbnOhIIpkvhpNARjOpVygVusIpzVX9nGbxOzmU00HzOgAyW5">
-</stripe-pricing-table>
+<style>
+    footer {
+        background-color: #f6f6f6;
+        padding: 30px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1MzTTEEPSNQKetWilrPfLdpW"
-publishable-key="pk_test_51MydHxEPSNQKetWiQWub6k9xsJNIawFyW0DlTe5mfRgyD3BYznSbnOhIIpkvhpNARjOpVygVusIpzVX9nGbxOzmU00HzOgAyW5">
-</stripe-pricing-table>
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
 
+    .social-media-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
 
-        </div>
+    .social-media-icons img {
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-media-icons a:hover {
+        transform: translateY(-5px);
+    }
+
+    .social-media-icons a:hover img {
+        transform: scale(1.2);
+    }
+
+    .social-media-text {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #666666;
+    }
+
+    .a-copyright {
+        font-size: 14px;
+        color: #999999;
+        margin-top: 30px;
+    }
+</style>
+
+<footer>
+    <div class="social-media-icons">
+        <a href="https://www.facebook.com/your-facebook-page-url" target="_blank" rel="noopener noreferrer" loading="lazy">
+            <img src="F.webp" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/cnjrestaurant" target="_blank" rel="noopener noreferrer" loading="lazy">
+            <img src="R.webp" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com/your-twitter-profile-url" target="_blank" rel="noopener noreferrer" loading="lazy">
+            <img src="T.webp" alt="Twitter">
+        </a>
+    </div>
+    <div class="social-media-text">
+        <p>Stay connected with us for updates, delicious recipes, and exclusive offers!</p>
+    </div>
+    <div class="a-copyright">
+        <p>&copy; 2023 CNJ Restaurant &amp; Bakery. All Rights Reserved.</p>
+    </div>
+</footer>
+</html>

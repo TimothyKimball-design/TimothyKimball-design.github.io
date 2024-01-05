@@ -6,157 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-
-
-        h1, p {
-            color: #1d1d1f;
-            text-align: center;
-            margin-top:20px;
-
-        }
-
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        h2 {
-            color: #000;
-            font-size: 40px;
-            text-align: center;
-            font-weight:600;
-            letter-spacing: 0em;
-            line-height: 1.2;
-            margin-bottom: 20px;
-
-        }
-
-        h21 {
-            color: #000;
-            font-size: 16px;
-            text-align: center;
-            font-weight:600;
-            letter-spacing: 0em;
-            line-height: 1.1;
-            margin-bottom: 70px;
-            margin-top:40px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-        .copyright {
-
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        footer{
-            text-align: center;
-
-
-
-        }
-        .w{
-
-
-            text-align: center;
-        }
-
-        /* Mobile Devices - Phones/Tablets */
-
-        @media only screen and (min-width: 360px) and (max-width: 768px)  {
-            footer{
-                text-align: center;
-
-            }
-
-
-
-            .features {
-                flex-direction: column;
-                padding: 50px;
-            }
-
-            /* MOBILE HEADINGS */
-
-            h1 {
-                font-size: 1.9rem;
-            }
-
-            h2 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 16px;
-            }
-
-
-
-
-
-            /* SECTIONS */
-
-            .headline {
-                height: 20vh;
-            }
-
-
-
-            /* Define a style for the country element */
-            .copyright {
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-
-            .w{
-                text-align: center;
-            }
-
-        }
-        @media only screen and (max-width: 359px) {
-
-            footer{
-                text-align: center;
-                padding-top:100px;
-
-            }
-            .w{
-                text-align: center;
-            }
-
-
-            /* SECTIONS */
-
-            .headline {
-                height: 20vh;
-            }
-        }
-    </style>
-
-
-
-
     <body>
         <style>
             .banner {
@@ -197,7 +46,6 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 color: #f2cc4c;
-                font-weight:600;
             }
 
             .banner:hover h1 {
@@ -210,6 +58,7 @@
                 margin-bottom: 20px;
                 padding: 0 20px;
                 transition: opacity 0.3s ease;
+                color: #1d1d1f;
             }
 
             .banner:hover p {
@@ -273,6 +122,7 @@
 
         .nav-item {
             padding-left: 20px;
+
         }
 
         .navbar-logo {
@@ -380,8 +230,6 @@
             </nav>
         </div>
     </div>
-
-
     <style>
         .chat-container {
             position: fixed;
@@ -858,204 +706,213 @@
 
 
 
-
     <style>
-        .slideshow {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            height: 1100px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
-        .slideshow img {
-            width: 768px;
-            height: 1024px;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            margin: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+
+
+
+
+
+        h1, p {
+            color: #1d1d1f;
+            text-align: center;
+
+            margin-top: 20px;
         }
 
-        .slideshow img:first-child {
-            opacity: 1;
+        h1 {
+            font-size: 1.5rem;
         }
 
-        .slideshow img.active {
-            opacity: 1;
-        }
-        @media only screen and (min-width: 501px) and (max-width: 768px) {
-            .slideshow {
-                height: 660px;
-            }
-
-            .slideshow img {
-                width: 480px;
-                height: 600px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-            }
-        }
-        @media only screen and (min-width: 360px) and (max-width: 500px) {
-            .slideshow {
-                height: 540px;
-            }
-
-            .slideshow img {
-                width: 360px;
-                height: 480px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-            }
-        }
-
-        @media only screen and (max-width: 359px) {
-            .slideshow img {
-                width: 240px;
-                height: 360px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-            }
-
-            .slideshow {
-                height:420px;
-            }
-        }
-    </style>
-
-
-
-
-    <div class="slideshow">
-        <img src="hf2.webp" alt="Food" loading="lazy">
-        <img src="hf3.webp" alt="Food" loading="lazy">
-        <img src="hf1.webp" alt="Food" loading="lazy">
-        <img src="hf5.webp" alt="Food" loading="lazy">
-        <img src="hf6.webp" alt="Food" loading="lazy">
-    </div>
-
-
-    <script>
-        var slideIndex = 0;
-        var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
-
-        setInterval(function () {
-            // Hide all slides
-            for (var i = 0; i < slides.length; i++) {
-                slides[i].classList.remove("active");
-            }
-
-            // Increment slide index
-            slideIndex++;
-
-            // Reset slide index if it goes out of bounds
-            if (slideIndex >= slides.length) {
-                slideIndex = 0;
-            }
-
-            // Show current slide
-            slides[slideIndex].classList.add("active");
-        }, 3000);
-    </script>
-    <style>
-        .welcome-section {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-
-
-        }
-        .welcome-heading{
+        h2 {
             color: #f2cc4c;
-        }
-        
-        .welcome-image {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .welcome-text {
-            flex: 1;
-
+            font-size: 40px;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 10px;
         }
 
-        .btn {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            position: absolute;
+
+
+
+        h21 {
+            color: #000;
+            font-size: 16px;
+            text-align: center;
+            font-weight:600;
+            letter-spacing: 0em;
+            line-height: 1.1;
+            margin-bottom: 70px;
+            margin-top:40px;
+            text-align:center;
         }
 
-        @media (min-width: 768px) {
-            .welcome-section {
-                max-width: 1200px; /* Set a maximum width for desktop view */
-                margin: 0 auto; /* Center the welcome section horizontally */
+        .content {
+            display: flex;
+            align-items: center;
+            width:100%;
+            margin-bottom: 50px;
+        }
+
+        .left-image {
+            width: 500px;
+            height: 100%;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .right-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 30px;
+
+
+        }
+
+
+
+        p {
+            margin-top: 20px;
+            color: #1d1d1f;
+        }
+
+        section1{
+            height: 100px;
+            margin: 50px;
+            text-align:center;
+            display:block;
+        }
+
+        /* Define a style for the country element */
+        .copyright {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Media Queries */
+
+        /* Mobile Devices - Phones/Tablets */
+
+        @media only screen and (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                padding: 50px;
+            }
+
+            /* MOBILE HEADINGS */
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            .content {
+                display: flex;
+                align-items: center;
+            }
+
+            .left-image {
+                width: 80%;
+                height: 400px;
+                position: static;
+                display: flex;
+                justify-content: center;
+                margin:auto;
+
+
+            }
+            .gpsection {
+
+
+                margin-top:190px;
 
             }
 
-            .welcome-image {
-                width: 50%; /* Adjust the image width as needed */
-                margin-bottom: 0;
-                margin-right: 20px;
+
+            .right-text {
+                display: block;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 20px;
+                width:100%;
+                position:absolute;
+                margin-top: 850px;
+                height:400px;
+
             }
 
-            .welcome-text {
-                flex: 1;
+            h2 {
+                font-size: 24px;
+                margin: 0;
+                font-weight:bold;
             }
+
+            p {
+                margin-top: 20px;
+
+            }
+
+
+
+            .features {
+                flex-direction: column;
+                padding: 50px;
+            }
+
+
+
+
+
+
+
+
+            /* SECTIONS */
+
+            .headline {
+                height: 20vh;
+            }
+
+            section1{
+                margin-top: 250px;
+                height:180px;
+            }
+
+            /* Define a style for the country element */
+            .copyright {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
         }
-
 
     </style>
-    <div class="welcome-section">
-        <img src="Mom.webp" alt="Welcome Image" loading="lazy" class="welcome-image">
-        <div class="welcome-text">
-            <h2 class="welcome-heading">Welcome</h2>
-            <p>Experience the finest flavors and culinary delights at our restaurant. We take pride in serving exceptional dishes made with the freshest ingredients, prepared by our skilled chefs.</p>
-            <p>Indulge in a gastronomic journey with our diverse menu that showcases a fusion of international and local cuisines. From mouthwatering appetizers to decadent desserts, we have something to satisfy every palate.</p>
-            <p>Whether you're looking for an intimate dinner for two, a family gathering, or a special occasion, our friendly staff is dedicated to ensuring you have a memorable dining experience. We strive to create a warm and inviting ambiance where you can relax and savor the moment.</p>
-            <p>Join us today and embark on a culinary adventure that will delight your senses and leave you craving for more.</p>
-            <a href="About.html" class="btn">Learn More</a>
+
+
+
+
+    <section>
+
+        <div class="content">
+            <img src="Mom.webp" alt="Image" class="left-image" loading="lazy">
+            <div class="right-text">
+                <h2>Our Story</h2>
+                <p>
+                    "Once upon a time, a humble restaurant emerged as a beacon of culinary delight. From the very first bite, guests were transported to a world of extraordinary flavors and warm hospitality." </p>
+            </div>
         </div>
-    </div>
-
-
-    <style>
-        .mapouter {
-            position: relative;
-            text-align: right;
-            height: 400px;
-            margin: auto;
-            margin-top: 80px;
-        }
-
-        .gmap_canvas {
-            overflow: hidden;
-            background: none !important;
-            height: 400px;
-        }
-
-        .gmap_iframe {
-            height: 400px !important;
-            width: 100% !important;
-        }
-    </style>
-
-    <div class="mapouter">
-        <div class="gmap_canvas">
-            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Lake worth&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" loading="lazy"></iframe>
-            <a href="https://embed-googlemap.com">embed google maps</a>
-        </div>
-    </div>
-
-
+    </section>
 
     <style>
         .gpsection {
@@ -1102,10 +959,6 @@
             <p class="gpphone">777-777-7777</p>
         </div>
     </section>
-
-
-
-
 
 
     <style>
@@ -1182,47 +1035,4 @@
             <p>&copy; 2023 CNJ Restaurant &amp; Bakery. All Rights Reserved.</p>
         </div>
     </footer>
-
-
-
-
-
-
-
-    <script>
-
-
-        $('.menu-toggle').click(function () {
-            $(".nav no-search").toggleClass("mobile-nav");
-            $(this).toggleClass("is-active");
-        });
-    </script>
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyBNLpQ7HdJH9pEB_edF2YkrG4UpPk5xxjs",
-            authDomain: "cnj-restaurant.firebaseapp.com",
-            projectId: "cnj-restaurant",
-            storageBucket: "cnj-restaurant.appspot.com",
-            messagingSenderId: "823740008979",
-            appId: "1:823740008979:web:1ae975dc719eecd443cde6",
-            measurementId: "G-RTRQGPQXNE"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-</body>
 </html>
-
-
-
